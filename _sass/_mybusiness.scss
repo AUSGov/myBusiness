@@ -1,0 +1,119 @@
+#myBusinessheader {
+    
+    .bga-link-wrapper {
+        background: $blue-secondary;
+        padding: 16px 0;
+        color: $white;
+        
+        svg {
+            vertical-align: top;
+            margin: 4px 4px 0 0;
+        }
+        
+        a {
+            color: $white;
+        }
+    }
+    
+    .banner-wrapper {
+        padding: 64px 0 48px;
+        background:  $teal-dark url(../assets/open_business_gradient.jpg) no-repeat;
+        background-size: contain;
+        background-size: auto 100%;
+        background-repeat:no-repeat;
+        background-position: right top;
+        color: $white;
+        
+        h1 {
+            color: $white;
+            @include font-format($font-family, $font-semibold, normal);
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+        h2 {
+            color: $white;
+            @include font-format($font-family, $font-semibold, normal);
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 0;
+            margin: 32px 0 16px 0;
+        }
+        .recommended-wrapper {
+            ul {
+                margin: 0;
+                padding: 0;
+                
+                li {
+                    list-style-type: none;
+                    background: $purple-dark;
+                    padding: 3px 16px;
+                    margin-right: 8px;
+                    border: solid 2px $purple-mid;
+                    border: solid 2px #721754;
+                    border-radius: 25px;
+                    display: inline-block;
+                    box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+                }
+            }
+        }
+    }
+}
+
+.main-section {
+    padding: 0;
+    
+    .teal-background {
+        background: $teal-lightest;
+    }
+    
+    .service-tiles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        
+        .service-tile {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background: $white;
+            min-height: 20px;
+            width: 31%;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+            border-top: solid $purple-mid 3px;
+            padding: 24px;
+            
+            a {
+                color: $black-light;
+                @include font-format($font-family, $font-semibold, normal);
+                margin-bottom: 32px;
+                display: block;
+                width: 100%;
+            }
+            svg.icon {
+               fill: $purple-dark;
+                display: block;
+                margin-bottom:16px;
+                height: 48px;
+                width: auto;
+            }
+            svg.arrow {
+                fill: $purple-dark;
+                width: 24px;
+                display: block;
+                margin: 0;
+                padding: 0;
+                height: 24px;
+            }
+        }
+    }
+}
+
+#myBusinessfooter {
+    background: $blue-secondary;
+    color: $white;
+    padding: 32px 0;
+    
+    p {
+        color: $white;
+    }
+}

@@ -38,7 +38,7 @@ $yellow-secondary-lightest: #FFD964;
 $teal-dark: #218080;
 $teal-mid: #59A0A0;
 $teal-light: #C7DFDF;
-$teal-lightest: #DEECEC;
+$teal-lightest: #E1F2F2;
 
 $blue-dark: #2F70BF;
 $blue-mid: #6394CF;
@@ -87,4 +87,6 @@ $font-semibold: 600;
     font-style: $font-style;
 }
 
-
+//example use
+// @include font-format($font-family, $font-semibold, normal);
+// @include font-format($font-family, $fontregular, normal);

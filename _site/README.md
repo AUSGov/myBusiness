@@ -1,4 +1,4 @@
-# BGA Guide navigation
+# myBusiness initial prototype
 
-[Base Business.gov.au Prototype](https://ausgov.github.io/bga-base-prototype/index.html)
+[myBusiness Prototype]()
     
