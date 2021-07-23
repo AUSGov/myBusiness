@@ -158,7 +158,7 @@ $(document).ready(function () {
    
     // Modal functionality
     // Empty href modal
-    $('a[href=""]').on("click", function(){
+    /*$('a[href=""]').on("click", function(){
         if (!$(this).parents('.sticky-container').length && !$(this).hasClass("guide_navlink")){
             $(".modal-wrapper").addClass("active");
             $(".modal-background").addClass("active");
@@ -185,7 +185,7 @@ $(document).ready(function () {
         $(".modal-wrapper").addClass("active");
         $(".modal-background").addClass("active");
     });
-    
+    */
     
 }); // END doc ready
 

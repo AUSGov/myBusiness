@@ -1,3 +1,7 @@
+.c-wrapper .row {
+    max-width: 1400px !important;
+}
+
 #myBusinessheader {
     
     .bga-link-wrapper {
@@ -15,6 +19,55 @@
         }
     }
     
+    .login-strap-wrapper {
+        
+        padding: 8px 0;
+        
+        .mybusiness-logo {
+            display: flex;
+            
+            img {
+                width: 130px;
+            }
+            p {
+                margin: 0 0 0 24px;
+                padding: 0;
+                font-size: 40px;
+                text-align: center;
+                line-height: 100px;
+                @include font-format($font-family, $font-semibold, normal);
+                color: $blue-secondary;
+                font-weight: 700;
+            }
+        }
+        .myGovId-login {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            
+            a {
+                border: solid 2px #153a3e;
+                align-content: center;
+                color: #153a3e;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 10px 24px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+            
+            img {
+                width: 140px;
+                height: auto;
+                background: #153a3e;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                padding: 0 16px;
+            }
+        }
+        
+    }
+    
     .banner-wrapper {
         padding: 64px 0 48px;
         background:  $teal-dark url(../assets/open_business_gradient.jpg) no-repeat;
@@ -26,17 +79,50 @@
         
         h1 {
             color: $white;
-            @include font-format($font-family, $font-semibold, normal);
-            margin: 0 0 32px 0;
+            @include font-format($font-family, $font-regular, normal);
+            margin: 0 0 64px 0;
             padding: 0;
+            font-size: 58px;
+            //letter-spacing: 0.02rem;
         }
         h2 {
             color: $white;
             @include font-format($font-family, $font-semibold, normal);
-            text-transform: uppercase;
-            font-size: 18px;
+            //text-transform: uppercase;
+            font-size: 22px;
             padding: 0;
             margin: 32px 0 16px 0;
+        }
+        .search-wrapper {
+            display: flex;
+            margin-bottom: 40px;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+            
+            input.header-search {
+                border: none;
+                outline: none;
+                background: $white;
+                color: $black-light;
+                width: 100%;
+                padding: 24px 16px;
+                font-size: 18px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+            button.header-search-button {
+                background: $purple-dark;
+                border: none;
+                outline: none;
+                box-shadow:none;
+                padding: 10px;
+                width: 88px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                
+                svg {
+                    fill: $white; 
+                }
+            }
         }
         .recommended-wrapper {
             ul {
@@ -53,8 +139,15 @@
                     border-radius: 25px;
                     display: inline-block;
                     box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+                    cursor: pointer;
                 }
             }
+        }
+        @media(min-width: 1400px) {
+            padding: 72px 0 64px;
+        }
+        @media(min-width: 1800px) {
+            padding: 160px 0 88px;
         }
     }
 }
@@ -62,6 +155,9 @@
 .main-section {
     padding: 0;
     
+    section {
+        padding: 32px 0;
+    }
     .teal-background {
         background: $teal-lightest;
     }
@@ -79,7 +175,9 @@
             min-height: 20px;
             width: 31%;
             box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
-            border-top: solid $purple-mid 3px;
+            border-top: solid $purple-mid 4px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
             padding: 24px;
             
             a {
@@ -103,6 +201,102 @@
                 margin: 0;
                 padding: 0;
                 height: 24px;
+            }
+        }
+    }
+    
+    .services-login {
+        .login-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 32px;
+            
+            .button {
+                margin-right: 24px;
+                
+                a {
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 10px 24px;
+                }
+            }
+            .myGovId-login {
+                display: flex;
+                justify-content: flex-start;
+            
+                a {
+                    border: solid 2px #153a3e;
+                    align-content: center;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    background: $white;
+                     color: #153a3e;
+                }
+
+                img {
+                    width: 140px;
+                    height: auto;
+                    background: #153a3e;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    padding: 0 16px;
+                }
+            }
+            .non-branded-login {
+                display: flex;
+                justify-content: flex-start;
+                a {
+                    border: solid 2px $blue-secondary;
+                    border-radius: 6px;
+                    background: $blue-primary;
+                    color: $white;
+                    text-align: center;
+                    min-width: 140px;
+                }
+            }
+            .create-account {
+                display: flex;
+                justify-content: flex-start;
+                a {
+                    border: solid 2px $blue-secondary;
+                    border-radius: 6px;
+                    background: $white;
+                    text-align: center;
+                    min-width: 180px;
+                    color: $blue-secondary;
+                }
+            }
+        }
+    }
+    
+    .news-tiles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        
+        
+        .image-wrapper {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .image-pathway-tile {
+            width: 31%;
+            padding: 0;
+            background: $white;
+            text-align: left;
+            color: $black-light;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+            border-top: solid $teal-dark 4px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            
+            .image-pathway-content {
+                padding: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
             }
         }
     }

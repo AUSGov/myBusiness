@@ -12,7 +12,7 @@
  
     <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
     
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="/myBusiness/css/client.min.css"> -->
@@ -31,7 +31,7 @@
     
     <script src=/myBusiness/js/prototype.js></script>
  
-    <link rel="canonical" href="http://localhost:4000/myBusiness/myBusiness-landing-page.html">
+    <link rel="canonical" href="http://localhost:4000/myBusiness/landing-page.html">
     <link rel="alternate" type="application/rss+xml" title="myBusiness prototype" href="http://localhost:4000/myBusiness/feed.xml">
     
     
@@ -66,7 +66,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16">
                             <path id="Path_3598" data-name="Path 3598" d="M115.972,22,122,28.018,120.014,30,112,22l8.014-8L122,15.982Z" transform="translate(-112 -14)" fill="#fff" fill-rule="evenodd" />
                             </svg>
-                <a href=/myBusiness/index.html>business.gov.au</a></div> 
+                    <a href=/myBusiness/index.html><strong>business</strong>.gov.au</a></div> 
             </div>
          </div>
          </div>
@@ -81,14 +81,16 @@
                      <div class="mybusiness-logo">
                          
                          <img src=/myBusiness/assets/gov_crest.svg  alt="Australian government crest"/>
-                        <div class="site-name">MyBusiness</div>
+                         <div class="site-name"><p>MyBusiness</p></div>
                      </div>
                  
                  </div>
                  
                  <div class="col-6">
                     <div class="myGovId-login">
-                        <a href="">MygovID login</a> 
+                        <a href="">Log in</a>
+                        
+                        <img src=/myBusiness/assets/myGovID_mock.svg alt="mygovid logo"/>
                     </div>
                  </div>
              </div>
@@ -100,17 +102,17 @@
      <div class="banner-wrapper">
      <div class="c-wrapper container-fluid">
          <div class="row">
-         <div class="col-12 col-md-6 col-lg-8">
+         <div class="col-12 col-md-6 col-lg-7">
              <h1>We deliver support and services for business</h1>
              </div>
          </div>
          <div class="row">
-         <div class="col-12 col-md-6 col-lg-8">
+         <div class="col-12 col-md-6 col-lg-7">
              <div class="search-wrapper">
                 <input class="header-search">
                 <button class="header-search-button">
-                    <svg width="20" height="20">
-                        <path fill-rule="evenodd" d="M15.27 12.815l-.409.409-1.706-1.706c2.052-2.838 1.802-6.836-.753-9.39A7.218 7.218 0 0 0 7.264 0a7.22 7.22 0 0 0-5.139 2.128c-2.833 2.833-2.833 7.443 0 10.276a7.22 7.22 0 0 0 5.139 2.128c1.549 0 3.023-.483 4.253-1.375l1.706 1.705-.41.41L17.543 20 20 17.543l-4.73-4.728zm-11.507-2.05a4.955 4.955 0 0 1 0-6.999 4.918 4.918 0 0 1 3.5-1.45c1.323 0 2.566.515 3.5 1.45a4.955 4.955 0 0 1 0 7 4.919 4.919 0 0 1-3.5 1.449 4.92 4.92 0 0 1-3.5-1.45z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                        <path id="Search" d="M31.575,36l0,0-8.509-8.509.737-.737-3.07-3.07A13.075,13.075,0,0,1,0,13.078a13.074,13.074,0,1,1,23.68,7.655l3.07,3.07.737-.737L36,31.577,31.577,36ZM13.076,4.169a8.909,8.909,0,1,0,6.3,2.61A8.853,8.853,0,0,0,13.076,4.169Z" fill="#fff" />
                     </svg>
                 </button>
                         
@@ -143,7 +145,7 @@
     <div class="main-section">
 
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid teal-background">
-    
+    <section>
     <div class="row">
         <div class="body-copy col-12 col-lg-8">
         <h2>Browse services</h2>
@@ -232,17 +234,34 @@
                     </svg>      
                 </div>
             </div>
+            
+            <div class="services-login">
+                <h3>Connect online to access all services, quickly and securely</h3>
+                
+                <div class="login-wrapper">
+                <div class="myGovId-login button">
+                    <a href="">Log in</a>
+                    <img src=/myBusiness/assets/myGovID_mock.svg alt="mygovid logo" />
+                </div>
+                <!--<div class="non-branded-login button">
+                    <a href="">Log in</a>
+                    </div>-->
+                <div class="create-account button">
+                    <a href="">Create account</a>
+                </div>
+                </div>
+            </div>
         
         </div>
     </div>
 
-    
+    </section>
     </div>
     
     
     
     <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-    
+    <section>
     <div class="row">
         <div class="body-copy col-12">
         <h2>News</h2>
@@ -250,15 +269,93 @@
     </div>
     
     <div class="row">
-        <div class="col-12 col-lg-8">
+        <div class="col-12">
         
             <div class="news-tiles">
+           
+                <div class="image-pathway-tile">
+                    <a class="image-pathway-anchor" href="">
+                        <div class="image-wrapper">
+                            <img src=/myBusiness/assets/man-wearing-a-mask-900x600.jpg>
+                        </div>
+                        <div class="image-pathway-content">
+                            <h3>COVID-19 business support in your state</h3>
+
+                            <p>A breakdown of the COVID-19 grants and assistance in your state or territory.</p>
+                            <div class="icon-wrapper">
+                                <div class="BgaIcon image-pathway-list-circle-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8"></circle>
+                                    </svg>
+                                </div>
+                                <div class="BgaIcon  image-pathway-list-clock-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+               
                 
+                <div class="image-pathway-tile">
+                    <a class="image-pathway-anchor" href="">
+                        <div class="image-wrapper">
+                            <img src=/myBusiness/assets/man-wearing-a-mask-900x600.jpg>
+                        </div>
+                        <div class="image-pathway-content">
+                            <h3>COVID-19 business support in your state</h3>
+
+                            <p>A breakdown of the COVID-19 grants and assistance in your state or territory.</p>
+                            <div class="icon-wrapper">
+                                <div class="BgaIcon image-pathway-list-circle-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8"></circle>
+                                    </svg>
+                                </div>
+                                <div class="BgaIcon  image-pathway-list-clock-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    
+                
+                <div class="image-pathway-tile">
+                    <a class="image-pathway-anchor" href="">
+                        <div class="image-wrapper">
+                            <img src=/myBusiness/assets/man-wearing-a-mask-900x600.jpg>
+                        </div>
+                        <div class="image-pathway-content">
+                            <h3>COVID-19 business support in your state</h3>
+
+                            <p>A breakdown of the COVID-19 grants and assistance in your state or territory.</p>
+                            <div class="icon-wrapper">
+                                <div class="BgaIcon image-pathway-list-circle-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8"></circle>
+                                    </svg>
+                                </div>
+                                <div class="BgaIcon  image-pathway-list-clock-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+               
+           
             </div>
         
         </div>
     </div>
-
+        </section>
     
     </div>
     

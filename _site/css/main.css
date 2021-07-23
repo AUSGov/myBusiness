@@ -3277,35 +3277,93 @@ label { display: block; padding: 5px 0; font-weight: bold; }
 
 .form-field-container.validation-error .form-validation-message { display: block; }
 
+.c-wrapper .row { max-width: 1400px !important; }
+
 #myBusinessheader .bga-link-wrapper { background: #212A4C; padding: 16px 0; color: #ffffff; }
 
 #myBusinessheader .bga-link-wrapper svg { vertical-align: top; margin: 4px 4px 0 0; }
 
 #myBusinessheader .bga-link-wrapper a { color: #ffffff; }
 
+#myBusinessheader .login-strap-wrapper { padding: 8px 0; }
+
+#myBusinessheader .login-strap-wrapper .mybusiness-logo { display: flex; }
+
+#myBusinessheader .login-strap-wrapper .mybusiness-logo img { width: 130px; }
+
+#myBusinessheader .login-strap-wrapper .mybusiness-logo p { margin: 0 0 0 24px; padding: 0; font-size: 40px; text-align: center; line-height: 100px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #212A4C; font-weight: 700; }
+
+#myBusinessheader .login-strap-wrapper .myGovId-login { display: flex; justify-content: flex-end; margin-top: 20px; }
+
+#myBusinessheader .login-strap-wrapper .myGovId-login a { border: solid 2px #153a3e; align-content: center; color: #153a3e; font-size: 20px; font-weight: 600; padding: 10px 24px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+
+#myBusinessheader .login-strap-wrapper .myGovId-login img { width: 140px; height: auto; background: #153a3e; border-top-right-radius: 6px; border-bottom-right-radius: 6px; padding: 0 16px; }
+
 #myBusinessheader .banner-wrapper { padding: 64px 0 48px; background: #218080 url(../assets/open_business_gradient.jpg) no-repeat; background-size: contain; background-size: auto 100%; background-repeat: no-repeat; background-position: right top; color: #ffffff; }
 
-#myBusinessheader .banner-wrapper h1 { color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin: 0 0 32px 0; padding: 0; }
+#myBusinessheader .banner-wrapper h1 { color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; margin: 0 0 64px 0; padding: 0; font-size: 58px; }
 
-#myBusinessheader .banner-wrapper h2 { color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; text-transform: uppercase; font-size: 18px; padding: 0; margin: 32px 0 16px 0; }
+#myBusinessheader .banner-wrapper h2 { color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 22px; padding: 0; margin: 32px 0 16px 0; }
+
+#myBusinessheader .banner-wrapper .search-wrapper { display: flex; margin-bottom: 40px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
+
+#myBusinessheader .banner-wrapper .search-wrapper input.header-search { border: none; outline: none; background: #ffffff; color: #333333; width: 100%; padding: 24px 16px; font-size: 18px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+
+#myBusinessheader .banner-wrapper .search-wrapper button.header-search-button { background: #A42079; border: none; outline: none; box-shadow: none; padding: 10px; width: 88px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+#myBusinessheader .banner-wrapper .search-wrapper button.header-search-button svg { fill: #ffffff; }
 
 #myBusinessheader .banner-wrapper .recommended-wrapper ul { margin: 0; padding: 0; }
 
-#myBusinessheader .banner-wrapper .recommended-wrapper ul li { list-style-type: none; background: #A42079; padding: 3px 16px; margin-right: 8px; border: solid 2px #B64D94; border: solid 2px #721754; border-radius: 25px; display: inline-block; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
+#myBusinessheader .banner-wrapper .recommended-wrapper ul li { list-style-type: none; background: #A42079; padding: 3px 16px; margin-right: 8px; border: solid 2px #B64D94; border: solid 2px #721754; border-radius: 25px; display: inline-block; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); cursor: pointer; }
+
+@media (min-width: 1400px) { #myBusinessheader .banner-wrapper { padding: 72px 0 64px; } }
+
+@media (min-width: 1800px) { #myBusinessheader .banner-wrapper { padding: 160px 0 88px; } }
 
 .main-section { padding: 0; }
+
+.main-section section { padding: 32px 0; }
 
 .main-section .teal-background { background: #E1F2F2; }
 
 .main-section .service-tiles { display: flex; justify-content: space-between; margin-bottom: 32px; }
 
-.main-section .service-tiles .service-tile { display: flex; flex-wrap: wrap; align-content: space-between; background: #ffffff; min-height: 20px; width: 31%; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); border-top: solid #B64D94 3px; padding: 24px; }
+.main-section .service-tiles .service-tile { display: flex; flex-wrap: wrap; align-content: space-between; background: #ffffff; min-height: 20px; width: 31%; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); border-top: solid #B64D94 4px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding: 24px; }
 
 .main-section .service-tiles .service-tile a { color: #333333; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin-bottom: 32px; display: block; width: 100%; }
 
 .main-section .service-tiles .service-tile svg.icon { fill: #A42079; display: block; margin-bottom: 16px; height: 48px; width: auto; }
 
 .main-section .service-tiles .service-tile svg.arrow { fill: #A42079; width: 24px; display: block; margin: 0; padding: 0; height: 24px; }
+
+.main-section .services-login .login-wrapper { display: flex; justify-content: flex-start; margin-bottom: 32px; }
+
+.main-section .services-login .login-wrapper .button { margin-right: 24px; }
+
+.main-section .services-login .login-wrapper .button a { font-size: 20px; font-weight: 600; padding: 10px 24px; }
+
+.main-section .services-login .login-wrapper .myGovId-login { display: flex; justify-content: flex-start; }
+
+.main-section .services-login .login-wrapper .myGovId-login a { border: solid 2px #153a3e; align-content: center; border-top-left-radius: 6px; border-bottom-left-radius: 6px; background: #ffffff; color: #153a3e; }
+
+.main-section .services-login .login-wrapper .myGovId-login img { width: 140px; height: auto; background: #153a3e; border-top-right-radius: 6px; border-bottom-right-radius: 6px; padding: 0 16px; }
+
+.main-section .services-login .login-wrapper .non-branded-login { display: flex; justify-content: flex-start; }
+
+.main-section .services-login .login-wrapper .non-branded-login a { border: solid 2px #212A4C; border-radius: 6px; background: #254F90; color: #ffffff; text-align: center; min-width: 140px; }
+
+.main-section .services-login .login-wrapper .create-account { display: flex; justify-content: flex-start; }
+
+.main-section .services-login .login-wrapper .create-account a { border: solid 2px #212A4C; border-radius: 6px; background: #ffffff; text-align: center; min-width: 180px; color: #212A4C; }
+
+.main-section .news-tiles { display: flex; justify-content: space-between; margin-bottom: 32px; }
+
+.main-section .news-tiles .image-wrapper img { max-width: 100%; height: auto; }
+
+.main-section .news-tiles .image-pathway-tile { width: 31%; padding: 0; background: #ffffff; text-align: left; color: #333333; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); border-top: solid #218080 4px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+.main-section .news-tiles .image-pathway-tile .image-pathway-content { padding: 24px; display: flex; flex-wrap: wrap; align-content: space-between; }
 
 #myBusinessfooter { background: #212A4C; color: #ffffff; padding: 32px 0; }
 
