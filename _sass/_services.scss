@@ -1,0 +1,239 @@
+#services-header {
+    background: $teal-dark url(../assets/header-gradient.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-position: right top;
+    
+    .mybusiness-logo {
+            display: flex;
+            
+            img {
+                width: 110px;
+            }
+            p {
+                margin: 0 0 0 16px;
+                padding: 0;
+                font-size: 32px;
+                text-align: center;
+                line-height: 100px;
+                @include font-format($font-family, $font-semibold, normal);
+                color: $white;
+                font-weight: 700;
+                
+            }
+        }
+    
+    .sign-out {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 28px;
+        a {
+            border: $white solid 2px;
+            border-radius: 6px;
+            padding: 8px 16px;
+            color: $white;
+            font-weight: 600;
+            
+        }
+    }
+    @media (max-width: 768px) {
+        .mybusiness-logo {
+            justify-content: center;
+            
+            img {
+                width: 90px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+        .sign-out {
+            justify-content: center;
+            margin: 0 0 16px 0;
+        }
+    }
+}
+.nav {
+    background: $teal-dark;
+    background: $blue-secondary;
+    //background: $purple-dark;
+    padding: 8px 0;
+    
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            
+            li {
+                display: inline-block;
+                color: $white;
+                padding: 0 32px 0 0;
+            }
+        }
+    }
+}
+
+.main-section.services {
+    background: $white;
+    
+    h1 {
+        padding: 16px 0 0 0;
+    }
+    h2 {
+        padding-top: 48px;
+    }
+    
+    .c-wrapper {
+        &.white-background {
+            background: $white;
+        }
+        &.teal-background {
+            background: $teal-lightest;
+        }
+        &.purple-background {
+            background: $purple-lightest;
+        }
+    }
+    
+    .alert-list {
+        
+        .alert-tile {
+            display: flex;
+            width: 100%;
+            padding: 32px;
+            background: $white;
+            background:: $purple-lightest;
+            text-align: left;
+            color: $black-light;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+            border-top: solid $purple-dark 4px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            margin-bottom: 32px;
+            
+            .alert-icon {
+                width: 15%;
+                margin: 6px 24px 0 0;
+                
+                svg {
+                    fill: $purple-dark;
+                }
+            }
+            
+            .alert-content {
+                h3 {
+                    padding: 0 0 16px 0;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 16px;
+                }
+                a {
+                    color: $blue-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .alert-tile {
+                display: block;
+                
+                .alert-icon {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    
+    .service-tiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        .service-tile {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background: $white;
+            min-height: 20px;
+            width: 100%;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
+            border-top: solid $teal-dark 4px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            padding: 24px;
+            margin-bottom: 32px;
+            
+            a {
+                color: $black-light;
+                @include font-format($font-family, $font-semibold, normal);
+                margin-bottom: 32px;
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                border: none;
+                font-size: 24px;
+                
+                &:hover {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            svg.icon {
+               fill: $teal-dark;
+                display: block;
+                margin-bottom:16px;
+                height: 48px;
+                width: auto;
+            }
+            svg.arrow {
+                fill: $teal-dark;
+                width: 24px;
+                display: block;
+                margin: 0;
+                padding: 0;
+                height: 24px;
+            }
+        }
+        @media(min-width: 576px) {
+            .service-tile {
+                width: 48%;
+                margin-right: 2%;
+            }
+        }
+        @media (min-width: 992px) {
+            .service-tiles {
+                justify-content: flex-start;
+            }
+            .service-tile {
+                width: 31%;
+                margin-right: 2%;
+            }
+        }
+    }
+    
+    .services-link {
+        a {
+            color: $blue-secondary;
+            text-decoration: underline;
+            margin: 16px 0 48px 0;
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            
+            svg {
+                fill: $blue-secondary;
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+        }
+    }
+   
+}
+
+.footer {
+    background: $blue-secondary;
+}
