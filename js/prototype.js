@@ -188,9 +188,7 @@ $(document).ready(function () {
     */
     
     //MYBUSINESS
-    $('.mygovid .input-group-btn').on('click', function(){
-        
-    });
+
     
 }); // END doc ready
 

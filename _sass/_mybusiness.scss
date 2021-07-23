@@ -40,28 +40,40 @@
             }
         }
         .myGovId-login {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 20px;
             
             a {
-                border: solid 2px #153a3e;
-                align-content: center;
-                color: #153a3e;
-                font-size: 20px;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
                 font-weight: 600;
-                padding: 10px 24px;
-                border-top-left-radius: 6px;
-                border-bottom-left-radius: 6px;
-            }
-            
-            img {
-                width: 140px;
-                height: auto;
-                background: #153a3e;
-                border-top-right-radius: 6px;
-                border-bottom-right-radius: 6px;
-                padding: 0 16px;
+                text-align: center;
+                font-size: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $black-light;
+                }
+
+                span {
+                    border: solid 2px #153a3e;
+                    align-content: center;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    background: $white;
+                    color: #153a3e;
+                    display: block;
+                    padding: 10px 24px;
+
+                }
+
+                img {
+                    width: 140px;
+                    height: auto;
+                    background: #153a3e;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    padding: 0 16px;
+                }
             }
         }
         
@@ -78,15 +90,12 @@
                 }
             }
 
-            .myGovId-login {
+            .myGovId-login a {
                 justify-content: center;
                 margin-bottom: 16px;
                 
-                a {
-                    padding: 6px 16px;
-                }
                 img {
-                    width: 96px;
+                    width: 120px;
                 }
             }
         }
@@ -283,24 +292,27 @@
             
             .button {
                 margin-right: 24px;
-                
-                a {
-                    font-size: 20px;
-                    font-weight: 600;
-                    padding: 10px 24px;
-                }
+                font-size: 20px;
+                font-weight: 600;
             }
             .myGovId-login {
                 display: flex;
                 justify-content: flex-start;
-            
-                a {
+                &:hover {
+                        text-decoration: underline;
+                        color: $black-light;
+                    }
+                
+                span {
                     border: solid 2px #153a3e;
                     align-content: center;
                     border-top-left-radius: 6px;
                     border-bottom-left-radius: 6px;
                     background: $white;
-                     color: #153a3e;
+                    color: #153a3e;
+                    display: block;
+                    padding: 10px 24px;
+                    
                 }
 
                 img {
@@ -315,6 +327,7 @@
             .non-branded-login {
                 display: flex;
                 justify-content: flex-start;
+                
                 a {
                     border: solid 2px $blue-secondary;
                     border-radius: 6px;
@@ -322,11 +335,13 @@
                     color: $white;
                     text-align: center;
                     min-width: 140px;
+                    padding: 10px 24px;
                 }
             }
             .create-account {
                 display: flex;
                 justify-content: flex-start;
+                
                 a {
                     border: solid 2px $blue-secondary;
                     border-radius: 6px;
@@ -334,6 +349,14 @@
                     text-align: center;
                     min-width: 180px;
                     color: $blue-secondary;
+                    padding: 10px 24px;
+                    display: block;
+                    
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        color: $black-light;
+                    }
                 }
             }
         }
