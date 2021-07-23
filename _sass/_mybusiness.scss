@@ -27,12 +27,12 @@
             display: flex;
             
             img {
-                width: 130px;
+                width: 110px;
             }
             p {
-                margin: 0 0 0 24px;
+                margin: 0 0 0 16px;
                 padding: 0;
-                font-size: 40px;
+                font-size: 32px;
                 text-align: center;
                 line-height: 100px;
                 @include font-format($font-family, $font-semibold, normal);
@@ -66,10 +66,36 @@
             }
         }
         
+        @media(max-width: 768px) {
+            .mybusiness-logo {
+                justify-content: center;
+                
+                img {
+                    width: 80px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 45px;
+                }
+            }
+
+            .myGovId-login {
+                justify-content: center;
+                margin-bottom: 16px;
+                
+                a {
+                    padding: 6px 16px;
+                }
+                img {
+                    width: 96px;
+                }
+            }
+        }
+        
     }
     
     .banner-wrapper {
-        padding: 64px 0 48px;
+        padding: 32px 0;
         background:  $teal-dark url(../assets/open_business_gradient.jpg) no-repeat;
         background-size: contain;
         background-size: auto 100%;
@@ -96,6 +122,7 @@
         .search-wrapper {
             display: flex;
             margin-bottom: 40px;
+            margin-bottom: 0px;
             box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
             
             input.header-search {
@@ -143,6 +170,33 @@
                 }
             }
         }
+        
+        @media(max-width: 768px) {
+            
+            background-image: url(../assets/open_business_gradient_mobile.jpg);
+            
+            h1 {
+                font-size: 40px;
+            }
+            .search-wrapper {
+                input.header-search {
+                    padding: 8px;
+                }
+                button.header-search-button {
+                    width: 64px;
+                }
+            }
+            .recommended-wrapper ul li {
+                margin-bottom: 8px;
+            }
+        }
+        
+        @media(min-width: 992px) {
+            padding: 64px 0 48px;
+            .search-wrapper {
+                margin-bottom: 40px;
+            }
+        }
         @media(min-width: 1400px) {
             padding: 72px 0 64px;
         }
@@ -161,11 +215,14 @@
     .teal-background {
         background: $teal-lightest;
     }
+    .white-background {
+        background: $white;
+    }
     
     .service-tiles {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 32px;
         
         .service-tile {
             display: flex;
@@ -173,12 +230,13 @@
             align-content: space-between;
             background: $white;
             min-height: 20px;
-            width: 31%;
+            width: 100%;
             box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2); 
             border-top: solid $purple-mid 4px;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
             padding: 24px;
+            margin-bottom: 32px;
             
             a {
                 color: $black-light;
@@ -201,6 +259,16 @@
                 margin: 0;
                 padding: 0;
                 height: 24px;
+            }
+        }
+        @media(min-width: 576px) {
+            .service-tile {
+                width: 48%;
+            }
+        }
+        @media (min-width: 992px) {
+            .service-tile {
+                width: 31%;
             }
         }
     }
@@ -267,14 +335,37 @@
                 }
             }
         }
+        @media(max-width: 576px) {
+            .login-wrapper {
+                display: block;
+                margin-bottom: 16px;
+                
+                .myGovId-login,
+                .create-account, 
+                .non-branded-login {
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 16px;
+                    
+                    a {
+                        width: 100% !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
     
     .news-tiles {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 32px;
         
-        
+        .image-pathway-anchor {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
         .image-wrapper {
             img {
                 max-width: 100%;
@@ -282,7 +373,7 @@
             }
         }
         .image-pathway-tile {
-            width: 31%;
+            width: 100%;
             padding: 0;
             background: $white;
             text-align: left;
@@ -291,12 +382,38 @@
             border-top: solid $teal-dark 4px;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
+            margin-bottom: 32px;
             
             .image-pathway-content {
-                padding: 24px;
-                display: flex;
-                flex-wrap: wrap;
-                align-content: space-between;
+                padding: 24px 24px 48px 24px;
+                position: relative;
+                
+                h3 {
+                    margin-top:0;
+                    padding-top: 0;
+                }
+            }
+             svg.arrow {
+                fill: $teal-dark;
+                width: 24px;
+                display: block;
+                margin: 0;
+                padding: 0;
+                height: 24px;
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+                 display: none;
+            }
+        }
+        @media(min-width: 576px) {
+            .image-pathway-tile {
+                width: 48%;
+            }
+        }
+        @media (min-width: 992px) {
+            .image-pathway-tile {
+                width: 31%;
             }
         }
     }
@@ -306,6 +423,10 @@
     background: $blue-secondary;
     color: $white;
     padding: 32px 0;
+    
+    img {
+        padding-bottom: 32px;
+    }
     
     p {
         color: $white;
