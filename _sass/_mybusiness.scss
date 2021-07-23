@@ -1,8 +1,7 @@
-.c-wrapper .row {
-    max-width: 1400px !important;
-}
-
 #myBusinessheader {
+    .c-wrapper .row {
+        max-width: 1400px !important;
+    }
     
     .bga-link-wrapper {
         background: $blue-secondary;
@@ -206,11 +205,14 @@
     }
 }
 
-.main-section {
+.main-section.myBusiness {
     padding: 0;
     
     section {
         padding: 32px 0;
+    }
+    .c-wrapper .row {
+        max-width: 1400px !important;
     }
     .teal-background {
         background: $teal-lightest;
@@ -420,6 +422,9 @@
 }
 
 #myBusinessfooter {
+    .c-wrapper .row {
+        max-width: 1400px !important;
+    }
     background: $blue-secondary;
     color: $white;
     padding: 32px 0;
