@@ -475,8 +475,8 @@
         padding:0;
         margin: 0;
         border-radius: 50%;
-        top: 35px;
-        left: -10px;
+        //top: 35px;
+        //left: -10px;
         text-align: center;
         line-height: 2rem;
         font-size: 20px;
@@ -491,14 +491,37 @@
         font-size: 18px;
         z-index: 750;
         position: absolute;
-        top: 35px;
-        left: 10px;
+        //top: 35px;
+        //left: 10px;
         padding: 16px 16px 16px 26px;
         border-radius: 6px;
         box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
         opacity: 0.95;
         display: none;
     }
+    
+        &#popup-1 { //Recommended for you
+            .popup-i {
+                top: 35px;
+                left: -10px;
+            }
+
+            .popup-explanation {
+                top: 35px;
+                left: 10px;
+            }
+        }
+     &#popup-2 { // Search
+            .popup-i {
+                top: -10px;
+                left: -10px;
+            }
+
+            .popup-explanation {
+                top: -10px;
+                left: 10px;
+            }
+        }
 }
 
 
