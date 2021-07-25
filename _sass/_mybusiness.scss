@@ -363,6 +363,7 @@
         @media(max-width: 576px) {
             .login-wrapper {
                 display: block;
+                max-width: 250px;
                 margin-bottom: 16px;
                 
                 .myGovId-login,
