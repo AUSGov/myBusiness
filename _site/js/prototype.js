@@ -188,7 +188,17 @@ $(document).ready(function () {
     */
     
     //MYBUSINESS
-
+    /*$('.popup-i').hover(function(){
+        console.log("hovering");
+        $(this).next('.popup-explanation').slideToggle();
+    });*/
+    
+    $('.popup-i').on('click', function(){
+        console.log("clicking");
+        $(this).next('.popup-explanation').slideToggle();
+    });
+    
+    
     
 }); // END doc ready
 
