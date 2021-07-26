@@ -194,7 +194,6 @@ $(document).ready(function () {
     });*/
     
     $('.popup-i').on('click', function(){
-        console.log("clicking");
         $(this).next('.popup-explanation').slideToggle();
     });
     

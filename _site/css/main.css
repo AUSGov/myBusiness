@@ -3439,15 +3439,31 @@ label { display: block; padding: 5px 0; font-weight: bold; }
 
 .popup-wrapper .popup-i { background: #FFD964; position: absolute; display: block; z-index: 800; width: 35px; height: 35px; padding: 0; margin: 0; border-radius: 50%; text-align: center; line-height: 2rem; font-size: 20px; font-weight: 700; border: 2px solid #C18100; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); cursor: pointer; }
 
-.popup-wrapper .popup-explanation { background: #ffffff; background: #FCF4E3; font-size: 18px; z-index: 750; position: absolute; padding: 16px 16px 16px 26px; border-radius: 6px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); opacity: 0.95; display: none; }
+.popup-wrapper .popup-explanation { background: #ffffff; background: #FCF4E3; border: 2px solid #C18100; font-size: 18px; z-index: 750; position: absolute; padding: 16px 16px 16px 26px; border-radius: 6px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2); opacity: 0.95; display: none; max-width: 600px; }
 
-.popup-wrapper#popup-1 .popup-i { top: 35px; left: -10px; }
+.popup-wrapper#popup-1 .popup-i { top: 35px; left: -15px; }
 
-.popup-wrapper#popup-1 .popup-explanation { top: 35px; left: 10px; }
+.popup-wrapper#popup-1 .popup-explanation { top: 35px; left: 5px; }
 
-.popup-wrapper#popup-2 .popup-i { top: -10px; left: -10px; }
+.popup-wrapper#popup-2 .popup-i { top: -10px; left: -15px; }
 
-.popup-wrapper#popup-2 .popup-explanation { top: -10px; left: 10px; }
+.popup-wrapper#popup-2 .popup-explanation { top: -10px; left: 5px; }
+
+.popup-wrapper#popup-3 .popup-i { top: 28px; left: 90px; }
+
+.popup-wrapper#popup-3 .popup-explanation { top: 28px; left: 105px; }
+
+.popup-wrapper#popup-4 .popup-i { top: 7px; left: auto; right: -28px; }
+
+.popup-wrapper#popup-4 .popup-explanation { top: 7px; left: auto; right: -15px; }
+
+.popup-wrapper#popup-5 .popup-i { top: 8px; left: -10px; }
+
+.popup-wrapper#popup-5 .popup-explanation { top: 28px; left: auto; right: 0px; width: 250%; }
+
+.popup-wrapper#popup-6 .popup-i { top: 52px; left: 130px; }
+
+.popup-wrapper#popup-6 .popup-explanation { top: 52px; left: 145px; }
 
 #mygovidheader { background: #153a3d; height: 80px; }
 

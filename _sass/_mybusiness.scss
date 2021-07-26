@@ -475,8 +475,6 @@
         padding:0;
         margin: 0;
         border-radius: 50%;
-        //top: 35px;
-        //left: -10px;
         text-align: center;
         line-height: 2rem;
         font-size: 20px;
@@ -488,40 +486,88 @@
     .popup-explanation {
         background: $white;
         background: $yellow-primary-lightest;
+        border: 2px solid $yellow-secondary;
         font-size: 18px;
         z-index: 750;
         position: absolute;
-        //top: 35px;
-        //left: 10px;
         padding: 16px 16px 16px 26px;
         border-radius: 6px;
         box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
         opacity: 0.95;
         display: none;
+        max-width: 600px;
     }
     
-        &#popup-1 { //Recommended for you
+    &#popup-1 { //myBusiness Recommended for you
             .popup-i {
                 top: 35px;
-                left: -10px;
+                left: -15px;
             }
 
             .popup-explanation {
                 top: 35px;
-                left: 10px;
+                left: 5px;
             }
         }
-     &#popup-2 { // Search
+    &#popup-2 { // myBusiness Search
             .popup-i {
                 top: -10px;
-                left: -10px;
+                left: -15px;
             }
 
             .popup-explanation {
                 top: -10px;
-                left: 10px;
+                left: 5px;
             }
         }
+    &#popup-3 { // myBusiness News
+            .popup-i {
+                top: 28px;
+                left: 90px;
+            }
+
+            .popup-explanation {
+                top: 28px;
+                left: 105px;
+            }
+        }
+    &#popup-4 { // BGA home login
+            .popup-i {
+                top: 7px;
+                left: auto;
+                right: -28px;
+            }
+
+            .popup-explanation {
+                top: 7px;
+                left: auto;
+                right: -15px;
+            }
+        }
+    &#popup-5 { // BGA home login mobile
+            .popup-i {
+                top: 8px;
+                left: -10px;
+            }
+
+            .popup-explanation {
+                top: 28px;
+                left: auto;
+                right: 0px;
+                width: 250%;
+            }
+}
+    &#popup-6 { // Services single sign on
+        .popup-i {
+            top: 52px;
+            left: 130px
+        }
+
+        .popup-explanation {
+            top: 52px;
+            left: 145px;
+        }
+    }
 }
 
 
